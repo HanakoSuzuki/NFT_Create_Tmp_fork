@@ -104,7 +104,7 @@ const Home: NextPage = () => {
       }
     };
     return <>
-    <div className="bg-blue pb-16 flex flex-wrap buttom justify-center">
+    <div className="bg-[#99CDDB] pb-16 flex flex-wrap buttom justify-center">
       <div className='px-8 pt-8 lg:px-28 lg:py-28'>
         <Image className="min-w-full" src="/main_grap.png" alt="Main Image" width={500} height={500}/>
       </div>
