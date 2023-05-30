@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function Header() {
     return <header>
-            <nav className="max-w-full lg:pt-1 bg-black">
+            <nav className="max-w-full lg:pt-1 bg-[#0000ff]">
                 <div className="grid grid-rows-12 grid-flow-col">
                     <div className='justify-front flex'>
                     <img className="mt-2" src="/logo.png" alt="LOGO" height="40" width="50" />

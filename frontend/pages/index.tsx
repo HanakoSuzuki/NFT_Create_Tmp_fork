@@ -91,7 +91,7 @@ const Home: NextPage = () => {
       const provider = new ethers.providers.Web3Provider((window as any).ethereum);
       const signer = provider.getSigner();
       await provider.send('eth_requestAccounts', []);
-      const tokenPrice = '0.01';
+      const tokenPrice = '0.001';
       const quantity = String(mintQuantity);
       const contract = new ethers.Contract(contractAddress, abi, signer);
       try{
@@ -108,7 +108,7 @@ const Home: NextPage = () => {
       <div className='px-8 pt-8 lg:px-28 lg:py-28'>
         <Image className="min-w-full" src="/main_grap.png" alt="Main Image" width={500} height={500}/>
       </div>
-      <div className="m-12 lg:m-32 px-12 py-6 lg:pt-8 lg:px-20 border-2 bg-black text-center border-[#FFFFFF] bg-center bg-contain bg-no-repeat">
+      <div className="m-12 lg:m-32 px-12 py-6 lg:pt-8 lg:px-20 border-2 bg-[#0000ff] text-center border-[#FFFFFF] bg-center bg-contain bg-no-repeat">
         <h1 className="text-2xl lg:text-4xl pt-2 lg:pt-4 lg:pb-6 text-white font-['Impact']">ETH MASKS NFT (Test1)</h1>
         <h1 className="text-2xl lg:text-4xl pt-2 lg:pt-4 lg:pb-6 text-white font-['Impact']"> {mintNum} / 5000</h1>
         <a className="text-2xl lg:text-4xl pt-2 lg:pt-8 lg:pb-8 text-white font-['Impact']">3</a><a className="text-2xl lg:text-3xl pt-2 lg:pt-8 lg:pb-8 text-[#99CDDB] font-['Impact'] ">MAX</a><br/>
